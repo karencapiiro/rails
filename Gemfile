@@ -35,7 +35,7 @@ gem "terser", ">= 1.1.4", require: false
 gem "json", ">= 2.0.0", "!=2.7.0"
 
 # Workaround until Ruby ships with cgi version 0.3.6 or higher.
-gem "cgi", ">= 0.3.6", require: false
+gem "cgi", ">= 0.4.2", require: false
 
 gem "prism"
 
