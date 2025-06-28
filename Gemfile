@@ -9,18 +9,18 @@ gem "minitest", ">= 5.15.0"
 gem "rake", ">= 13"
 
 gem "sprockets-rails", ">= 2.0.0", require: false
-gem "propshaft", ">= 0.1.7"
+gem "propshaft", ">= 0.9.1"
 gem "capybara", ">= 3.39"
 gem "selenium-webdriver", ">= 4.20.0"
 
 gem "rack-cache", "~> 1.2"
-gem "stimulus-rails"
-gem "turbo-rails"
-gem "jsbundling-rails"
-gem "cssbundling-rails"
-gem "importmap-rails", ">= 1.2.3"
-gem "tailwindcss-rails"
-gem "dartsass-rails"
+gem "stimulus-rails", ">= 1.3.1"
+gem "turbo-rails", ">= 2.0.0"
+gem "jsbundling-rails", ">= 1.2.2"
+gem "cssbundling-rails", ">= 1.4.0"
+gem "importmap-rails", ">= 2.0.0"
+gem "tailwindcss-rails", ">= 2.1.0"
+gem "dartsass-rails", ">= 0.5.1"
 gem "kamal", require: false
 # require: false so bcrypt is loaded only when has_secure_password is used.
 # This is to avoid Active Model (and by extension the entire framework)
@@ -78,7 +78,7 @@ gem "msgpack", ">= 1.7.0", require: false
 
 # for railties
 gem "bootsnap", ">= 1.4.4", require: false
-gem "webrick", require: false
+gem "webrick", ">= 1.8.2", require: false
 gem "jbuilder", require: false
 gem "web-console", require: false
 
@@ -119,7 +119,7 @@ end
 # Active Storage
 group :storage do
   gem "aws-sdk-s3", require: false
-  gem "google-cloud-storage", "~> 1.11", require: false
+  gem "google-cloud-storage", "~> 1.46", ">= 1.46.0", require: false
   gem "azure-storage-blob", "~> 2.0", require: false
 
   gem "image_processing", "~> 1.2"
